@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded",function(){
 			//動的にscript要素を作成
 			var script=document.createElement("script");
 			//callbackオプションにgetZipメソッドを指定
-			script.src="http://zipcloud.ibsnet.co.jp/api/search?zipcode=" + zip.value +"&callback=getZip";
+			script.src="https://zipcloud.ibsnet.co.jp/api/search?zipcode=" + zip.value +"&callback=getZip";
 			//ボディに追加すると
 			//getZip(住所データ)
 			//という関数の呼び出しのあるスクリプトが読み込まれる
