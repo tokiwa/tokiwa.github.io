@@ -30,7 +30,7 @@
                 const params_get = {
                     zipcode:this.zip
                 };
-                axios.get('http://zipcloud.ibsnet.co.jp/api/search', {params: params_get})
+                axios.get('https://zipcloud.ibsnet.co.jp/api/search', {params: params_get})
                     .then(response => this.addresses = response.data)                
                     .catch(error => console.log(error))
             }
