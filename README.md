@@ -1,6 +1,9 @@
 # tokiwa.github.io
-下記にて上記のプロラムを実行することができます。
+これらのプログラムはGitHubが提供する次のGitHub Pagesによってプロラムを実行することができます。
 
+https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages
+
+## デモ
 JQueryデモ
 https://tokiwa.github.io/HTML5_JS.html
 
