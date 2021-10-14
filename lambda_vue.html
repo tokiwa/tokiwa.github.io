@@ -3,17 +3,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>郵便番号API|Vue</title>
+    <title>lambda|Vue</title>
 </head>
 <body>
 <div id="app">
-    郵便番号
-    <input v-model="zip" type="text">
-    <button type="button" @click="getAddress">住所は？</button>
- <!--    <div v-for='address in addresses.results'>
-        {{address.address1}}{{address.address2}}{{address.address3}}
-    </div> -->
-    <br>{{addresses.message}}
+    <button type="button" @click="getMessage">Get message from AWS lambda</button>
+    <br>{{messages.message}}
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
@@ -22,16 +17,12 @@
     new Vue({
         el: '#app',
         data: {
-            zip: "",
-            addresses:[]
+            messages:[]
         },
         methods: {
-            getAddress() {
-/*                 const params_get = {
-                    zipcode:this.zip
-                }; */
+            getMessage() {
                 axios.get('https://at92482466.execute-api.ap-northeast-1.amazonaws.com/dev/hello-world-python')
-                    .then(response => this.addresses = response.data)                
+                    .then(response => this.messages = response.data)                
                     .catch(error => console.log(error))
             }
         }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #headingcolor {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="headingcolor">HTML5 + JavaScript</h1>
+    <div>イメージをクリックすると折り畳まれます。</div>
+    <div id="frame">
+        <img id="image" src="jquery_image.jpg">
+    </div>
+        <span>展開して元に戻す</span><button id="btn">Click</button>
+    <script>
+        $('#image').click(function () {
+            $('#frame').slideUp(3000);
+        });
+        $('#btn').click(() => {
+            $('#frame').slideDown(5000);
+        });
+    </script>
+</body>
+</html>
