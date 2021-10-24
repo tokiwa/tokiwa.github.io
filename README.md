@@ -21,7 +21,11 @@ https://tokiwa.github.io/breakout/index.html
 
 ## Back end sample
 AWS ディレクトりに Front endに対応するlambdaやCORS対応のPythonプログラムがあります。
+
 lambda_CORS.py: CORS対応サンプル
+
 lambda_s3put.py: s3への書き込み
+
 API_Gateway.py: fetch.htmlと連携
+
 postLambda_putS3.py: fetch_post.htmlと連携
