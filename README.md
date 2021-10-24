@@ -20,7 +20,7 @@ https://tokiwa.github.io/vue_zip.html
 https://tokiwa.github.io/breakout/index.html
 
 ## Back end sample
-AWS ディレクトりに Front endに対応するlambdaやCORS対応のPythonプログラムがあります。
+AWS ディレクトりに Front endに対応するlambdaやCORS対応のlamdaといったPythonプログラムがあります。
 
 lambda_CORS.py: CORS対応サンプル
 
