@@ -3,7 +3,7 @@
 
 https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages
 
-## デモ
+## Front end sample
 JQueryデモ
 https://tokiwa.github.io/HTML5_JS.html
 
@@ -18,3 +18,10 @@ https://tokiwa.github.io/vue_zip.html
 
 ブルック崩しゲーム
 https://tokiwa.github.io/breakout/index.html
+
+## Back end sample
+AWS ディレクトりに Front endに対応するlambdaやCORS対応のPythonプログラムがあります。
+lambda_CORS.py: CORS対応サンプル
+lambda_s3put.py: s3への書き込み
+API_Gateway.py: fetch.htmlと連携
+postLambda_putS3.py: fetch_post.htmlと連携

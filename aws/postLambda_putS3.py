@@ -7,7 +7,7 @@ s3 = boto3.resource('s3')
 def lambda_handler(event, context):
     body = event["body"]
     print(body)
-    bucket = 'yujitokiwa-jp-test'
+    bucket = 'hosei-ac-jp-xxxxxx'
     key = 'post_' + datetime.now().strftime('%Y-%m-%d-%H-%M-%S') + '.txt'
     file_contents = body
     obj = s3.Object(bucket,key)

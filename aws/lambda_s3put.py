@@ -5,7 +5,7 @@ print('Loading function')
 s3 = boto3.resource('s3')
 def lambda_handler(event, context):
     
-    bucket = 'yujitokiwa-jp-test'
+    bucket = 'hosei-ac-jp-xxxxxx'
     key = 'test_' + datetime.now().strftime('%Y-%m-%d-%H-%M-%S') + '.txt'
     file_contents = 'Lambda test'
     
