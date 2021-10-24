@@ -1,26 +1,29 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
-  <title>WebAPI sample - fetch</title>
+  <title>WebAPI sample - fetch/get</title>
 </head>
+
 <body>
   <button id='click'>Get message from AWS lambda</button>
   <div id='msg'>
-  <script>
-    const button = document.getElementById('click');
-    button.addEventListener('click', () => {
-        fetch('https://02smunrxph.execute-api.ap-northeast-1.amazonaws.com/dev/API_Gateway') 
-        .then(response => {
+    <script>
+      const button = document.getElementById('click');
+      button.addEventListener('click', () => {
+        fetch('https://02smunrxph.execute-api.ap-northeast-1.amazonaws.com/dev/API_Gateway')
+          .then(response => {
             return response.json();
-        })
-        .then(result => {
+          })
+          .then(result => {
             msg.innerText = result['message'];
-        })
-        .catch((e) => {
-        console.log(e)
-        })
-    });
-</script>
+          })
+          .catch((e) => {
+            console.log(e)
+          })
+      });
+    </script>
 </body>
+
 </html>
