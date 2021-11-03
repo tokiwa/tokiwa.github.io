@@ -29,3 +29,5 @@ lambda_s3put.py: s3への書き込み
 API_Gateway.py: fetch.htmlと連携
 
 postLambda_putS3.py: fetch_post.htmlと連携
+
+parrot.py: postされたJSONをそのままreturn
