@@ -33,3 +33,5 @@ postLambda_putS3.py: fetch_post.htmlと連携
 parrot.py: postされたJSONをそのままreturn
 
 s3FileListRead.py: s3にあるファイルを一覧し、その内容を表示
+
+parrot-get.py: getされたクエリパラメータをreturn ({API Gateway URL}?name=Tokiwa&role=instructor)
