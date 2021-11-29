@@ -3,9 +3,7 @@ import json
 print('*Loading lambda: parrot-get')
 
 def lambda_handler(event, context):
-    # TODO implement
-    name = event['queryStringParameters']['name']
-    role = event['queryStringParameters']['role']
+    response = event.get('queryStringParameters')
     return {
         'isBase64Encoded': False,
         'statusCode': 200,
@@ -13,5 +11,5 @@ def lambda_handler(event, context):
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'     
         },
-        'body':json.dumps('name:'+ name + ' role:' + role)
+        'body':json.dumps(response)
     }
