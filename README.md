@@ -34,4 +34,4 @@ parrot.py: postされたJSONをそのままreturn
 
 s3FileListRead.py: s3にあるファイルを一覧し、その内容を表示
 
-parrot-get.py: getされたクエリパラメータをreturn ({API Gateway URL}?name=Tokiwa&role=instructor)
+parrot-get.py: getされたクエリパラメータをJSONでreturn
