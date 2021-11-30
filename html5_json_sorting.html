@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON sorting sample</title>
+</head>
+
+<body>
+    <h1>JSON Sorting</h1>
+    <h2>Original data</h2>
+    <div id="msg1"></div>
+    <h2>Date sorted by point</h2>
+    <div id="msg2"></div>
+    <script>
+        var  json =
+        {
+            data:
+                [
+                    { "name": "user1", "point": 60 },
+                    { "name": "user2", "point": 25 },
+                    { "name": "user3", "point": 90 },
+                    { "name": "user4", "point": 80 },
+                    { "name": "user5", "point": 100 }
+                ]
+        };
+
+        json.data.forEach(function (value) {
+            msg1.innerText += value.name + " " + value.point + "\n";
+        });
+
+        json.data.sort(function (a, b) {
+            return b.point - a.point;
+        });
+
+        json.data.forEach(function (value) {
+            msg2.innerText += value.name + " " + value.point + "\n";
+        });
+
+
+    </script>
+</body>
+
+</html>
