@@ -19,24 +19,21 @@
                 [
                     { "name": "user1", "point": 60 },
                     { "name": "user2", "point": 25 },
-                    { "name": "user3", "point": 90 },
+                    { "name": "user3", "point": 5 },
                     { "name": "user4", "point": 80 },
                     { "name": "user5", "point": 100 }
                 ]
         };
 
-        json.data.forEach(function (value) {
+        json.data.forEach((value) => {
             msg1.innerText += value.name + " " + value.point + "\n";
         });
 
-        json.data.sort(function (a, b) {
-            return b.point - a.point;
-        });
+        json.data.sort((a, b) => b.point - a.point);
 
-        json.data.forEach(function (value) {
+        json.data.forEach((value) => {
             msg2.innerText += value.name + " " + value.point + "\n";
         });
-
 
     </script>
 </body>
