@@ -10,7 +10,7 @@ https://tokiwa.github.io/HTML5_JS.html
 fetchでAWS lambdaにアクセス (key:'message'のvalueを表示)
 https://tokiwa.github.io/fetch.html
 
-fetchでAWS lambdaにアクセス (jsonをそのまま表示)
+***[NEW]*** fetchでAWS lambdaにアクセス (jsonをそのまま表示)
 https://tokiwa.github.io/fetch_show_json.html
 
 Vue.js & axios でAWS lambdaにアクセス
@@ -22,7 +22,7 @@ https://tokiwa.github.io/vue_zip.html
 ブロック崩しゲーム
 https://tokiwa.github.io/breakout/index.html
 
-ユーザ毎のポイントを配列形式としたJSONをポイントでソートして表示するデモ
+***[NEW]*** ユーザ毎のポイントを配列形式としたJSONをポイントでソートして表示するデモ
 https://tokiwa.github.io/html5_json_sorting.html
 
 ## Back end sample
