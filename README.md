@@ -13,6 +13,9 @@ https://tokiwa.github.io/fetch.html
 fetchでAWS lambdaにアクセス (jsonをそのまま表示)
 https://tokiwa.github.io/fetch_show_json.html
 
+fetchでAWS lambda parrotにjsonをpostし、lambdaからおうむ返しされた結果をjsonで表示
+https://tokiwa.github.io/fetch_post_parrot.html
+
 Vue.js & axios でAWS lambdaにアクセス
 https://tokiwa.github.io/lambda_vue.html
 
