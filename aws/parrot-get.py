@@ -4,6 +4,7 @@ print('*Loading lambda: parrot-get')
 
 def lambda_handler(event, context):
     response = event.get('queryStringParameters')
+    print(response)
     return {
         'isBase64Encoded': False,
         'statusCode': 200,
