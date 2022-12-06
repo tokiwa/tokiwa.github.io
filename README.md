@@ -31,6 +31,9 @@ https://tokiwa.github.io/html5_json_sorting.html
 hello_world_python.py:
 PythonでAWS lambdaにjsonをpostし、オウム返しされたjsonを様々な形式で表示
 
+flask+aws.py:
+hello_world_pythin.pyをFlask上で稼働させ、そのEndPointにアクセスすることでWebブラウザにて結果を表示
+
 ## Back end sample
 AWS ディレクトりに Front endに対応するlambdaやCORS対応のlamdaといったPythonプログラムがあります。
 
