@@ -13,7 +13,7 @@ https://tokiwa.github.io/fetch.html
 fetchでAWS lambdaにアクセス (jsonをそのまま表示)
 https://tokiwa.github.io/fetch_show_json.html
 
-fetchでAWS lambda parrotにjsonをpostし、lambdaからおうむ返しされた結果をjsonで表示
+fetchでAWS lambda parrotにjsonをpostし、lambdaからオウム返しされた結果をjsonで表示
 https://tokiwa.github.io/fetch_post_parrot.html
 
 Vue.js & axios でAWS lambdaにアクセス
@@ -27,6 +27,9 @@ https://tokiwa.github.io/breakout/index.html
 
 ユーザ毎のポイントを配列形式としたJSONをポイントでソートして表示するデモ
 https://tokiwa.github.io/html5_json_sorting.html
+
+hello_world_python.py:
+PythonでAWS lambdaにjsonをpostし、オウム返しされたjsonを様々な形式で表示
 
 ## Back end sample
 AWS ディレクトりに Front endに対応するlambdaやCORS対応のlamdaといったPythonプログラムがあります。
