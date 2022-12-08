@@ -30,7 +30,7 @@ https://tokiwa.github.io/breakout/index.html
 ユーザ毎のポイントを配列形式としたJSONをポイントでソートして表示するデモ  
 https://tokiwa.github.io/html5_json_sorting.html
 
-###Python
+### Python
 
 hello_world_python.py  
 PythonでAWS lambdaにjsonをpostし、オウム返しされたjsonを様々な形式で表示
