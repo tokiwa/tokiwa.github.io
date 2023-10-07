@@ -9,7 +9,7 @@ https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-
 JQueryデモ  
 https://tokiwa.github.io/HTML5_JS.html
 
-DOMデモ (ノードの書換)
+DOMデモ (ノードの書換)  
 https://tokiwa.github.io/dom.html
 
 fetchでAWS lambdaにアクセス (key:'message'のvalueを表示)  
