@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>DOM</title>
+    <script type="text/javascript">
+        function OnButtonClick1() {
+            var p = document.getElementById('text1');
+            p.innerHTML = "カエル";
+        }
+        function OnButtonClick2() {
+            var p = document.getElementById('text2');
+            p.innerHTML = "馬";
+        }
+        function func1() {
+            document.location.reload();
+        }
+    </script>
+</head>
+
+<body>
+    <h1><strong>箱の中にいる動物は？</strong></h1>
+    <h1 id="text1" style="color:green"><strong>緑色の箱</strong></h1>
+    <h1 id="text2" style="color:brown"><strong>茶色の箱</strong></h1>
+    <br />
+    <input type="button" value="緑色の箱に入っている動物" onclick="OnButtonClick1();" /> <br><br>
+    <input type="button" value="茶色の箱に入っている動物" onclick="OnButtonClick2();" /> <br><br>
+    <input type="button" value="リセット" onclick="func1();" /> 
+</body>
+</html>
