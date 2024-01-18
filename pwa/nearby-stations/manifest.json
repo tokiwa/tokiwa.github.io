@@ -1,0 +1,18 @@
+{
+    "name": "nearby-stations",
+    "short_name": "stations",
+    "theme_color": "#009688",
+    "background_color": "#009688",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/pwa/nearby-stations/index.html",
+    "icons": [{
+        "src": "img/icon/apple-touch-icon_192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "img/icon/apple-touch-icon_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }]
+  }
