@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./favicon.ico">
+    <title>Nearby Stations</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper teal">
+            <a href="#" class="brand-logo"><i class="material-icons">gps_fixed</i>Nearby Stations</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="https://github.com/dashimaki929/dashimaki929.github.io/tree/master/app/nearby-stations" target="_blank">View Source</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="row">
+            <div id="resultDisp" class="col s12 m8"></div>
+        </div>
+    </main>
+
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a id="gps_fixed" class="btn btn-floating btn-large teal" onclick="updateUserPosition()">
+            <i class="material-icons waves-effect waves-light">gps_fixed</i>
+        </a>
+    </div>
+    <div class="tap-target teal lighten-1" data-activates="gps_fixed">
+        <div class="tap-target-content white-text">
+            <h5>位置情報取得</h5>
+            <p>位置情報を提供することで付近の駅を検索します。
+                位置情報が送信/保存されることはありません。</p>
+        </div>
+    </div>
+
+    <script>
+    $(document).ready(() => {
+        $('.tap-target').tapTarget('open');
+    });
+    </script>
+    <script src="./js/functions.js"></script>
+</body>
+</html>
