@@ -112,5 +112,5 @@ function doRequest(method, url) {
 }
 
 (function init() {
-    doRequest("GET", "https://dashimaki929.github.io/data/json/stations.json");
+    doRequest("GET", "https://tokiwa.github.io/data/json/stations.json");
 })();
